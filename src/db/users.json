@@ -13,18 +13,6 @@
           "name": "biggi biggi",
           "subtitle": "biggi",
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
-          "friendId": 1,
-          "name": "biggi2 biggi2",
-          "subtitle": "biggi2",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
-          "friendId": 3,
-          "name": "biggi4 biggi4",
-          "subtitle": "biggi4",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         }
       ],
       "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
