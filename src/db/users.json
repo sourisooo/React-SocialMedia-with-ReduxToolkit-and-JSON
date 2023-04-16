@@ -9,36 +9,6 @@
       "impressions": "biggi",
       "friends": [
         {
-          "friendId": "biggi2",
-          "name": "biggi2",
-          "subtitle": "biggi2",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
-          "friendId": "biggi3",
-          "name": "biggi3",
-          "subtitle": "biggi3",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
-          "friendId": "biggi2",
-          "name": "biggi2",
-          "subtitle": "biggi2",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
-          "friendId": "biggi3",
-          "name": "biggi3",
-          "subtitle": "biggi3",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
-          "friendId": "biggi3",
-          "name": "biggi3",
-          "subtitle": "biggi3",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
           "friendId": 0,
           "name": "biggi biggi",
           "subtitle": "biggi",
@@ -51,15 +21,9 @@
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         },
         {
-          "friendId": 0,
-          "name": "biggi biggi",
-          "subtitle": "biggi",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
-          "friendId": 1,
-          "name": "biggi2 biggi2",
-          "subtitle": "biggi2",
+          "friendId": 3,
+          "name": "biggi4 biggi4",
+          "subtitle": "biggi4",
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         }
       ],
@@ -75,14 +39,26 @@
       "impressions": "biggi2",
       "friends": [
         {
-          "friendId": "biggi2",
-          "name": "biggi2",
+          "friendId": 0,
+          "name": "biggi biggi",
+          "subtitle": "biggi",
+          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
+        },
+        {
+          "friendId": 1,
+          "name": "biggi2 biggi2",
           "subtitle": "biggi2",
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         },
         {
-          "friendId": "biggi3",
-          "name": "biggi3",
+          "friendId": 3,
+          "name": "biggi4 biggi4",
+          "subtitle": "biggi4",
+          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
+        },
+        {
+          "friendId": 2,
+          "name": "biggi3 biggi3",
           "subtitle": "biggi3",
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         }
@@ -99,33 +75,21 @@
       "impressions": "biggi3",
       "friends": [
         {
-          "friendId": "biggi2",
-          "name": "biggi2",
-          "subtitle": "biggi2",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
-          "friendId": "biggi3",
-          "name": "biggi3",
+          "friendId": 2,
+          "name": "biggi3 biggi3",
           "subtitle": "biggi3",
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         },
         {
-          "friendId": 0,
-          "name": "biggi biggi",
-          "subtitle": "biggi",
+          "friendId": 3,
+          "name": "biggi4 biggi4",
+          "subtitle": "biggi4",
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         },
         {
           "friendId": 1,
           "name": "biggi2 biggi2",
           "subtitle": "biggi2",
-          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-        },
-        {
-          "friendId": "biggi3",
-          "name": "biggi3",
-          "subtitle": "biggi3",
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         }
       ],
@@ -141,15 +105,21 @@
       "impressions": "biggi4",
       "friends": [
         {
-          "friendId": "biggi2",
-          "name": "biggi2",
+          "friendId": 0,
+          "name": "biggi biggi",
+          "subtitle": "biggi",
+          "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
+        },
+        {
+          "friendId": 1,
+          "name": "biggi2 biggi2",
           "subtitle": "biggi2",
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         },
         {
-          "friendId": 0,
-          "name": "biggi biggi",
-          "subtitle": "biggi",
+          "friendId": 3,
+          "name": "biggi4 biggi4",
+          "subtitle": "biggi4",
           "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
         }
       ],

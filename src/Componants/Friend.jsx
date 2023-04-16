@@ -2,7 +2,7 @@ import { PersonAddOutlined, PersonRemoveOutlined } from "@mui/icons-material";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { setFriends } from "../state/State";
+import { removeFriends, setFriends } from "../state/State";
 import FlexBetween from "./FlexBetween";
 import UserImage from "./UserImage";
 import axios from "axios";
@@ -16,7 +16,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const user = useSelector((state) => state.user);
   const friendsstate = useSelector((state) => state.friends);
   const friends = [user.friends];
-  let result = [];
+  let result = {};
 
 
   
@@ -34,22 +34,32 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const main = palette.neutral.main;
   const medium = palette.neutral.medium;
 
-  // const isFriend = friends.find((f) => {f.id === friendId,console.log(f.id === friendId, f.id,friendId  )});
-
 
   const patchFriend = async () => {
 
     const formData = {friendId:friendId, name:name, subtitle:subtitle, userPicturePath:userPicturePath};
 
+    if(friendsstate.find(e => e.friendId == friendId)){
+
+      console.log(friendsstate, "friend case")
+
+      dispatch(removeFriends( {formData} ));
+
+      result =  await axios.patch('http://localhost:5000/datas/'+id,{friends:friendsstate })
+
+
+    }else{
+
+
     dispatch(setFriends( formData ));
 
      result =  await axios.patch('http://localhost:5000/datas/'+id,{friends:friendsstate })
+    }
 
 };
 
 
 // console.log(friends,friendsstate)
-
 
 
 

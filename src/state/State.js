@@ -40,6 +40,39 @@ export const authSlice = createSlice({
 
     },
 
+    removeFriends: (state, action) => {
+
+      // if (state.friends) {
+
+
+      // const updatedFriends = state.friends.map(f => {
+      //   if (f.friendId === action.payload.formData) return action.payload.formData;
+      //   return f; 
+
+
+
+      // });
+      // state.friends = updatedFriends;
+
+      state.friends= state.friends.filter(f => f==action.payload.formData);
+
+
+      // state.friends.splice( state.friends.indexOf(action.payload.formData),1);
+
+        console.log(state.friends.indexOf(action.payload.formData))
+
+        // state.friends.map(e => {if(e==action.payload){ return action.payload} else {return e}});
+      // } else {
+      //   console.error("user friends non-existent :(");
+      // }
+
+      console.log("///////////////////////////////////////////////////////////////////////////////////////")
+      console.log(typeof (action.payload.formData),Object.getOwnPropertyNames(action.payload.formData),Object.values(action.payload.formData),Object.getOwnPropertyNames( state),Object.values(state))
+
+    },
+  
+    
+
     getFriends: (state, action) => {
 
       // if (state.friends) {
@@ -122,6 +155,6 @@ export const authSlice = createSlice({
   },
 });
 
-export const { setMode, setLogin, setLogout, setFriends, setPosts, setPost,setLikes,getLikes,resetLikes,getFriends } =
+export const { setMode, setLogin, setLogout, setFriends, setPosts, setPost,setLikes,getLikes,resetLikes,getFriends,removeFriends } =
   authSlice.actions;
 export default authSlice.reducer
