@@ -11,7 +11,7 @@ import WidgetWrapper from "./WidgetWrapper";
   import { useState } from "react";
   import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
-import { getLikes, resetLikes, setLikes } from "../state/State";
+import { getLikes, setLikes } from "../state/State";
 import { useEffect } from "react";
   
   const PostWidget = ({
@@ -26,7 +26,7 @@ import { useEffect } from "react";
     likes,
   }) => {
 
-    console.log(postId,likes,postUserId,name,location,userPicturePath);
+    // console.log(postId,likes,postUserId,name,location,userPicturePath);
 
     const [isComments, setIsComments] = useState(false);
 
@@ -34,15 +34,17 @@ import { useEffect } from "react";
 
     const loggedInUserId = useSelector((state) => state.id);
 
-    console.log(loggedInUserId)
+    // console.log(loggedInUserId)
 
     const likesstate = useSelector((state) => state.likes);
 
-    console.log(likesstate); 
+    // console.log(likesstate); 
 
     const isLiked = (likesstate>0);
 
-    const likeCount = likes.length;
+    let likeCount;
+    
+    if(typeof likes!="undefined"){likeCount=likes.length}else(likeCount=0);
   
     const { palette } = useTheme();
     const main = palette.neutral.main;
@@ -52,25 +54,19 @@ import { useEffect } from "react";
 
       let liked = loggedInUserId+Math.floor(Math.random()*1000)+Math.floor(Math.random()*1000)+Math.floor(Math.random()*1000)+Math.floor(Math.random()*1000);
       
-      let res = await axios.get('http://localhost:5100/datas/'+postId);let resdata=res.data.likes;console.log(resdata,res.status);if(res.status==200){dispatch(getLikes([{resdata}]))};
+      let res = await axios.get('http://localhost:5100/datas/'+postId);let resdata=res.data.likes;console.log(resdata,res.status);dispatch(getLikes([{resdata}]));
 
-    
-      dispatch( setLikes( liked));
+ 
+        dispatch( setLikes( liked));
 
-      if(res.status==200){
+        let result =  await axios.patch('http://localhost:5100/datas/'+postId,{likes: likesstate })
 
-        let result =  await axios.patch('http://localhost:5100/datas/'+postId,{likes: likesstate })}
-
-        console.log(likesstate); 
+        // console.log(likesstate,"inside POSTREQUEST"); 
 
      
     };
   
     // async function get() { let res = await axios.get('http://localhost:5100/datas/'+postId);let resdata=res.data;console.log(resdata);dispatch(getLikes([{resdata}]));}
-
-
-
-
 
     console.log(likesstate); 
 

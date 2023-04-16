@@ -156,7 +156,7 @@ dispatch(
               <MenuItem value={id}>
                 <Typography>{id}</Typography>
               </MenuItem>
-              <MenuItem onClick={() => dispatch(setLogout())}>Log Out</MenuItem>
+         
             </Select>
           </FormControl>
         </FlexBetween>

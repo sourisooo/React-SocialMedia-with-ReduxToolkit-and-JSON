@@ -40,6 +40,20 @@ export const authSlice = createSlice({
 
     },
 
+    getFriends: (state, action) => {
+
+      // if (state.friends) {
+        state.friends=(action.payload.at(0).resdata);
+      // } else {
+      //   console.error("user friends non-existent :(");
+      // }
+
+      console.log("///////////////////////////////////////////////////////////////////////////////////////")
+      console.log(Object.getOwnPropertyNames(action.payload.at(0).resdata),Object.values(action.payload.at(0).resdata),Object.getOwnPropertyNames( state),Object.values(state))
+
+    },
+
+
       setLikes: (state, action) => {
 
         console.log("///////////////////////////////////////////////////////////////////////////////////////")
@@ -68,6 +82,8 @@ export const authSlice = createSlice({
       console.log(Object.getOwnPropertyNames(action.payload.at(0).resdata),Object.values(action.payload.at(0).resdata),Object.getOwnPropertyNames( state),Object.values(state))
 
     },
+
+    
 
 
     resetLikes: (state, action) => {
@@ -106,6 +122,6 @@ export const authSlice = createSlice({
   },
 });
 
-export const { setMode, setLogin, setLogout, setFriends, setPosts, setPost,setLikes,getLikes,resetLikes } =
+export const { setMode, setLogin, setLogout, setFriends, setPosts, setPost,setLikes,getLikes,resetLikes,getFriends } =
   authSlice.actions;
 export default authSlice.reducer
