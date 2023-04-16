@@ -20,7 +20,7 @@
       "description": "hello",
       "picture": null,
       "picturePath": false,
-      "like": 18,
+      "likes": [],
       "id": 95
     },
     {
@@ -43,196 +43,89 @@
       "description": "hello2",
       "picture": null,
       "picturePath": false,
-      "like": 9,
+      "likes": [
+        1225,
+        3274,
+        2683,
+        1346,
+        2994,
+        1899,
+        2187,
+        2315,
+        2004,
+        1728,
+        1728,
+        1593,
+        3168,
+        1994,
+        2345,
+        1985,
+        2099,
+        2115,
+        3215,
+        1702
+      ],
       "id": 96
     },
     {
       "userId": {
-        "id": 1,
+        "id": 3,
         "user": {
-          "firstName": "biggi2",
-          "lastName": "biggi2",
-          "location": "biggi2",
-          "occupation": "biggi2",
-          "viewedProfile": "biggi2",
-          "impressions": "biggi2",
+          "firstName": "biggi4",
+          "lastName": "biggi4",
+          "location": "biggi4",
+          "occupation": "biggi4",
+          "viewedProfile": "biggi4",
+          "impressions": "biggi4",
           "friends": [
-            "biggi"
+            {}
           ],
           "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
-          "id": 1
+          "id": 3
         }
       },
-      "description": "test",
+      "description": "hello from biggi4",
       "picture": null,
       "picturePath": false,
-      "like": 28,
+      "likes": [
+        1225,
+        3274,
+        1001,
+        2095
+      ],
       "id": 97
     },
     {
       "userId": {
-        "id": 0,
+        "id": 2,
         "user": {
-          "firstName": "biggi",
-          "lastName": "biggi",
-          "location": "biggi",
-          "occupation": "biggi",
-          "viewedProfile": "biggi",
-          "impressions": "biggi",
+          "firstName": "biggi3",
+          "lastName": "biggi3",
+          "location": "biggi3",
+          "occupation": "biggi3",
+          "viewedProfile": "biggi3",
+          "impressions": "biggi3",
           "friends": [
-            "biggi2"
+            {}
           ],
           "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
-          "id": 0
+          "id": 2
         }
       },
-      "description": "test",
+      "description": "mello from biggi3",
       "picture": null,
       "picturePath": false,
-      "like": 21,
-      "id": 98
-    },
-    {
-      "userId": {
-        "id": 0,
-        "user": {
-          "firstName": "biggi",
-          "lastName": "biggi",
-          "location": "biggi",
-          "occupation": "biggi",
-          "viewedProfile": "biggi",
-          "impressions": "biggi",
-          "friends": [
-            "biggi2"
-          ],
-          "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
-          "id": 0
-        }
-      },
-      "description": "tuser?",
-      "picture": null,
-      "picturePath": false,
-      "like": 22,
-      "id": 99
-    },
-    {
-      "userId": {
-        "id": 0,
-        "user": {
-          "firstName": "biggi",
-          "lastName": "biggi",
-          "location": "biggi",
-          "occupation": "biggi",
-          "viewedProfile": "biggi",
-          "impressions": "biggi",
-          "friends": [
-            "biggi2"
-          ],
-          "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
-          "id": 0
-        }
-      },
-      "description": "zzz",
-      "picture": null,
-      "picturePath": false,
-      "like": 9,
-      "id": 100
-    },
-    {
-      "userId": {
-        "id": 0,
-        "user": {
-          "firstName": "biggi",
-          "lastName": "biggi",
-          "location": "biggi",
-          "occupation": "biggi",
-          "viewedProfile": "biggi",
-          "impressions": "biggi",
-          "friends": [
-            "biggi2"
-          ],
-          "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
-          "id": 0
-        }
-      },
-      "description": "testok?",
-      "picture": null,
-      "picturePath": false,
-      "like": 18,
-      "id": 101
-    },
-    {
-      "userId": {
-        "id": 0,
-        "user": {
-          "firstName": "biggi",
-          "lastName": "biggi",
-          "location": "biggi",
-          "occupation": "biggi",
-          "viewedProfile": "biggi",
-          "impressions": "biggi",
-          "friends": [
-            "biggi2"
-          ],
-          "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
-          "id": 0
-        }
-      },
-      "description": "hello there",
-      "picture": null,
-      "picturePath": false,
-      "like": 29,
-      "id": 102
-    },
-    {
-      "userId": {
-        "id": 0,
-        "user": {
-          "firstName": "biggi",
-          "lastName": "biggi",
-          "location": "biggi",
-          "occupation": "biggi",
-          "viewedProfile": "biggi",
-          "impressions": "biggi",
-          "friends": [
-            "biggi2"
-          ],
-          "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
-          "id": 0
-        }
-      },
-      "description": "image",
-      "picture": {
-        "path": "bird-1045954_960_720[1].jpg"
-      },
-      "picturePath": true,
-      "like": [
-        false
+      "likes": [
+        1225,
+        3274,
+        2683,
+        1346,
+        2994,
+        1899,
+        1862,
+        1808
       ],
-      "id": 103
-    },
-    {
-      "userId": {
-        "id": 1,
-        "user": {
-          "firstName": "biggi2",
-          "lastName": "biggi2",
-          "location": "biggi2",
-          "occupation": "biggi2",
-          "viewedProfile": "biggi2",
-          "impressions": "biggi2",
-          "friends": [
-            "biggi"
-          ],
-          "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
-          "id": 1
-        }
-      },
-      "description": "wop",
-      "picture": null,
-      "picturePath": false,
-      "like": 11,
-      "id": 104
+      "id": 98
     }
   ]
 }

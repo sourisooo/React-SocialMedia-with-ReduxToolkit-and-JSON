@@ -10,8 +10,9 @@ import Friend from "./Friend";
 import WidgetWrapper from "./WidgetWrapper";
   import { useState } from "react";
   import { useDispatch, useSelector } from "react-redux";
-import { setPost } from "../state/State";
 import axios from "axios";
+import { getLikes, resetLikes, setLikes } from "../state/State";
+import { useEffect } from "react";
   
   const PostWidget = ({
     postId,
@@ -21,13 +22,11 @@ import axios from "axios";
     location,
     picturePath,
     userPicturePath,
-    likes,
     comments,
+    likes,
   }) => {
 
-    console.log(postUserId,name,location,userPicturePath);
-
-    console.log(likes);
+    console.log(postId,likes,postUserId,name,location,userPicturePath);
 
     const [isComments, setIsComments] = useState(false);
 
@@ -37,11 +36,13 @@ import axios from "axios";
 
     console.log(loggedInUserId)
 
-    const isLiked = Boolean(likes[loggedInUserId]);
+    const likesstate = useSelector((state) => state.likes);
 
-    const likeCount = Object.keys(likes).length;
+    console.log(likesstate); 
 
-    console.log(likeCount,isLiked)
+    const isLiked = (likesstate>0);
+
+    const likeCount = likes.length;
   
     const { palette } = useTheme();
     const main = palette.neutral.main;
@@ -49,13 +50,30 @@ import axios from "axios";
   
     const patchLike = async () => {
 
-        
+      let liked = loggedInUserId+Math.floor(Math.random()*1000)+Math.floor(Math.random()*1000)+Math.floor(Math.random()*1000)+Math.floor(Math.random()*1000);
+      
+      let res = await axios.get('http://localhost:5100/datas/'+postId);let resdata=res.data.likes;console.log(resdata,res.status);if(res.status==200){dispatch(getLikes([{resdata}]))};
 
-        let result =  await axios.patch('http://localhost:5100/datas/'+postId,{like: loggedInUserId+Math.floor(Math.random()*10)+Math.floor(Math.random()*10)+Math.floor(Math.random()*10)+Math.floor(Math.random()*10)})
+    
+      dispatch( setLikes( liked));
 
-      dispatch(setPost({ post: result }));
+      if(res.status==200){
+
+        let result =  await axios.patch('http://localhost:5100/datas/'+postId,{likes: likesstate })}
+
+        console.log(likesstate); 
+
+     
     };
   
+    // async function get() { let res = await axios.get('http://localhost:5100/datas/'+postId);let resdata=res.data;console.log(resdata);dispatch(getLikes([{resdata}]));}
+
+
+
+
+
+    console.log(likesstate); 
+
     return (
       <WidgetWrapper m="2rem 0">
         <Friend

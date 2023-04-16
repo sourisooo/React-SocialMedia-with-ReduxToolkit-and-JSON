@@ -11,27 +11,24 @@ import {
   import { useSelector } from "react-redux";
   import { useEffect, useState } from "react";
   import { useNavigate } from "react-router-dom";
-import axios from "axios";
+
   
   const UserWidget = ( id ) => {
     const [user, setUser] = useState(null);
     const { palette } = useTheme();
     const navigate = useNavigate();
-    // const token = useSelector((state) => state.token);
+
     const dark = palette.neutral.dark;
     const medium = palette.neutral.medium;
     const main = palette.neutral.main;
 
-  
-    // console.log( id)
-
+    console.log( id)
     // console.log(user)
-
 
     if (!id.user) {
       return null;
     }
-  
+    
    
     return (
       <WidgetWrapper>
@@ -39,7 +36,7 @@ import axios from "axios";
         <FlexBetween
           gap="0.5rem"
           pb="1.1rem"
-          onClick={() => navigate(`/profile/${id}`)}
+          // onClick={() => navigate(`/profile/${id}`)}
         >
           <FlexBetween gap="1rem">
             <UserImage image={id.user.picturePath} />

@@ -94,7 +94,7 @@ info={description:e.description,id:e.id,like:e.like,picture:e.picture,userId:e.u
             location={e.userId.user.location}
             picturePath={e.picture}
             userPicturePath={e.userId.user.picturePath}
-            likes={e.like}
+            likes={e.likes}
             comments={e.description}
           />
         )

@@ -20,14 +20,35 @@
       "occupation": "biggi2",
       "viewedProfile": "biggi2",
       "impressions": "biggi2",
-      "friends": {
-        "friendId": 0,
-        "name": "biggi biggi",
-        "subtitle": "biggi",
-        "userPicturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg"
-      },
+      "friends": [
+        {}
+      ],
       "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
       "id": 1
+    },
+    {
+      "firstName": "biggi3",
+      "lastName": "biggi3",
+      "location": "biggi3",
+      "occupation": "biggi3",
+      "viewedProfile": "biggi3",
+      "impressions": "biggi3",
+      "friends": [],
+      "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
+      "id": 2
+    },
+    {
+      "firstName": "biggi4",
+      "lastName": "biggi4",
+      "location": "biggi4",
+      "occupation": "biggi4",
+      "viewedProfile": "biggi4",
+      "impressions": "biggi4",
+      "friends": [
+        {}
+      ],
+      "picturePath": "https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg",
+      "id": 3
     }
   ]
 }

@@ -52,7 +52,7 @@ const [res,setRes] = useState("");
 
 
 
-const random = Math.floor(Math.random()*2)
+const random = Math.floor(Math.random()*4)
 
 async function get() { let res = await axios.get('http://localhost:5000/datas/'+random);setRes(res.data);navigate("/home")}
 
